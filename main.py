@@ -20,7 +20,7 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 db = SQLAlchemy(app)
 
 
-SECRET_KEY = os.urandom(32)
+SECRET_KEY = SECRET_KEY
 app.config['SECRET_KEY'] = SECRET_KEY
 
 login_manager = LoginManager()
